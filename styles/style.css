@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+/*Posso importar as duas fonts no mesmo import*/
+
+:root {
+
+    --cor-primaria: black;
+    --cor-secundaria: white;
+    --cor-terciaria: #22D4FD;
+    /*substituir as fontes no css como nas cores*/
+    --fonte-primaria: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+
+    /*height: 100vh;*/ /*altura do body = 100% vh = view height*/
+    /*Depois que coloquei o footer e o header retirei o código acima pois já temos um cabeçalho e um footer e não preciso que o body ocupe 100% da página*/
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+}
+
+.cabecalho {
+    padding: 3% 0% 0% 12%;
+}
+
+.cabecalho__menu {
+    display: flex;
+    gap: 22px;
+}
+
+.cabecalho__menu__link {
+    text-decoration: none;
+    font-family: var(--fonte-secundaria);
+    /* font-size: 22px; */
+    font-size: 1.37rem; /* unidade de medida absoluta pela relativa */
+    font-weight: 600;
+    color: var(--cor-terciaria);
+}
+
+.apresentacao {
+
+    display: flex; /*define apresentacao flexivel*/
+    align-items: center; /*alinha de acordo com o elemento de maior altura*/
+    justify-content: space-between;
+    padding: 3% 12%;
+
+}
+
+.apresentacao__conteudo {
+
+    width: 593px;
+    display: flex;
+    flex-direction: column; /*itens do flexbox como colunas*/
+    gap: 10px;  /*Espaçamento externo*/
+}
+
+.apresentacao__conteudo__titulo {
+
+    font-size: 2.25rem;
+    font-family: 'Krona One', sans-serif;
+}
+
+.titulo-destaque {
+    color: var(--cor-terciaria);
+}
+
+
+.apresentacao__conteudo__paragrafo {
+
+    font-size: 1.25rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.apresentacao__subtitulo {
+    display: flex;
+    justify-content: center;
+    font-family: 'Krona One', sans-serif;
+    font-size: 1.12rem;
+    font-weight: bold;
+    margin: 10px 0 10px;
+}
+
+.apresentacao__links {
+    display: flex;  /*Crio o flexbox*/ 
+    justify-content: space-between; /*Espaçamento entre os links*/
+    flex-direction: row; /*Links em forma de coluna*/
+    align-items: center;  /*Centralizar os links*/
+    gap: 10px;  /*Espaçamento*/
+}
+
+.apresentacao__links__link {
+    display: flex;
+    justify-content: center; /*logo e nome centralizado*/
+    align-items: center;  /*nome centralizado de acordo com o tamanho da imagem*/
+    gap: 10px;
+    width: 280px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 18px;
+    margin: 10px 10px 10px;
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    border: 2px solid var(--cor-terciaria);
+    transition: 0.5s;
+
+}
+
+.apresentacao__links__link:hover {
+
+    background-color: rgb(6, 128, 128);
+    font-size: 1.25rem;
+    transition: 0.5s;
+}
+
+.imagem {
+    width: 425px;
+    border-radius: 25px;
+}
+
+.rodape {
+    background-color: var(--cor-terciaria);
+    color: var(--cor-primaria);
+    padding: 35px;
+    text-align: center;
+    font-family: 'krona-one', sans-serif;
+    font-weight: 400;
+}
