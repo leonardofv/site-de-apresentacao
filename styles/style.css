@@ -23,6 +23,7 @@ body {
     /*Depois que coloquei o footer e o header retirei o código acima pois já temos um cabeçalho e um footer e não preciso que o body ocupe 100% da página*/
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
+    width: 100%;
 }
 
 .cabecalho {
@@ -49,12 +50,13 @@ body {
     align-items: center; /*alinha de acordo com o elemento de maior altura*/
     justify-content: space-between;
     padding: 3% 12%;
+    gap: 20px;
 
 }
 
 .apresentacao__conteudo {
 
-    width: 593px;
+    width: 50%; /*Em relação a tag pai*/
     display: flex;
     flex-direction: column; /*itens do flexbox como colunas*/
     gap: 10px;  /*Espaçamento externo*/
@@ -99,7 +101,7 @@ body {
     justify-content: center; /*logo e nome centralizado*/
     align-items: center;  /*nome centralizado de acordo com o tamanho da imagem*/
     gap: 10px;
-    width: 280px;
+    width: 30%;
     text-align: center;
     text-decoration: none;
     border-radius: 8px;
@@ -119,8 +121,8 @@ body {
     transition: 0.5s;
 }
 
-.imagem {
-    width: 425px;
+.apresentacao__imagem {
+    width: 35%; /*Em relação a tag pai main*/
     border-radius: 25px;
 }
 
@@ -131,4 +133,11 @@ body {
     text-align: center;
     font-family: 'krona-one', sans-serif;
     font-weight: 400;
+}
+
+/* mobile */
+@media (max-width: 900px) {
+    .apresentacao {
+        flex-direction: column-reverse; /*Column revese para ficar em colunas de forma reversa*/
+    }
 }
