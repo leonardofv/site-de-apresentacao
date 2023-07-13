@@ -91,7 +91,7 @@ body {
 .apresentacao__links {
     display: flex;  /*Crio o flexbox*/ 
     justify-content: space-between; /*Espaçamento entre os links*/
-    flex-direction: row; /*Links em forma de coluna*/
+    flex-direction: row;
     align-items: center;  /*Centralizar os links*/
     gap: 10px;  /*Espaçamento*/
 }
@@ -136,8 +136,31 @@ body {
 }
 
 /* mobile */
-@media (max-width: 900px) {
+@media (max-width: 800px) {
+    .cabecalho {
+        padding: 8% 0%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+
     .apresentacao {
         flex-direction: column-reverse; /*Column revese para ficar em colunas de forma reversa*/
+        padding: 5% 5%;
     }
+
+    .apresentacao__conteudo {
+        width: auto; /*ou 100%*/
+
+    }
+
+    .apresentacao__links {
+        flex-direction: column;
+    }
+
+    .apresentacao__imagem {
+        margin: 5% 7%;
+    }
+    
 }
