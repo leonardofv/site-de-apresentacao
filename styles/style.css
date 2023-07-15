@@ -18,7 +18,6 @@
 }
 
 body {
-
     /*height: 100vh;*/ /*altura do body = 100% vh = view height*/
     /*Depois que coloquei o footer e o header retirei o código acima pois já temos um cabeçalho e um footer e não preciso que o body ocupe 100% da página*/
     background-color: var(--cor-primaria);
@@ -27,7 +26,7 @@ body {
 }
 
 .cabecalho {
-    padding: 3% 0% 0% 12%;
+    padding: 3% 0% 0% 10%;
 }
 
 .cabecalho__menu {
@@ -36,34 +35,29 @@ body {
 }
 
 .cabecalho__menu__link {
-    text-decoration: none;
+    text-decoration: double;
     font-family: var(--fonte-secundaria);
     /* font-size: 22px; */
     font-size: 1.37rem; /* unidade de medida absoluta pela relativa */
-    font-weight: 600;
+    font-weight: bold;
     color: var(--cor-terciaria);
 }
 
 .apresentacao {
-
     display: flex; /*define apresentacao flexivel*/
     align-items: center; /*alinha de acordo com o elemento de maior altura*/
     justify-content: space-between;
-    padding: 3% 12%;
-    gap: 20px;
-
+    padding: 0 10% 5%; /*Espaçamento externo do main*/
 }
 
 .apresentacao__conteudo {
-
-    width: 50%; /*Em relação a tag pai*/
+    width: 40%; /*Em relação a tag pai*/
     display: flex;
     flex-direction: column; /*itens do flexbox como colunas*/
-    gap: 10px;  /*Espaçamento externo*/
+    gap: 20px;  /*Espaçamento externo*/
 }
 
 .apresentacao__conteudo__titulo {
-
     font-size: 1.50rem;
     font-family: 'Krona One', sans-serif;
 }
@@ -72,9 +66,7 @@ body {
     color: var(--cor-terciaria);
 }
 
-
 .apresentacao__conteudo__paragrafo {
-
     font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
 }
@@ -115,14 +107,13 @@ body {
 }
 
 .apresentacao__links__link:hover {
-
     background-color: rgb(6, 128, 128);
     font-size: 1.25rem;
     transition: 0.5s;
 }
 
 .apresentacao__imagem {
-    width: 35%; /*Em relação a tag pai main*/
+     /*Em relação a tag pai main*/
 }
 
 .rodape {
@@ -151,7 +142,6 @@ body {
 
     .apresentacao__conteudo {
         width: auto; /*ou 100%*/
-
     }
 
     .apresentacao__conteudo__titulo {
@@ -169,10 +159,6 @@ body {
 
     .apresentacao__imagem {
         margin: 5% 7%;
-    }
-
-    .apresentacao__links {
-        
     }
 
     .rodape {
