@@ -3,15 +3,14 @@
 /*Posso importar as duas fonts no mesmo import*/
 
 :root {
-
     --cor-primaria: black;
     --cor-secundaria: white;
     --cor-terciaria: #22D4FD;
     /*substituir as fontes no css como nas cores*/
     --fonte-primaria: 'Krona One', sans-serif;
     --fonte-secundaria: 'Montserrat', sans-serif;
-
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -47,7 +46,7 @@ body {
     display: flex; /*define apresentacao flexivel*/
     align-items: center; /*alinha de acordo com o elemento de maior altura*/
     justify-content: space-between;
-    padding: 0 10% 5%; /*Espaçamento externo do main*/
+    padding: 2% 10% 5%; /*Espaçamento externo do main*/
 }
 
 .apresentacao__conteudo {
@@ -103,7 +102,6 @@ body {
     font-weight: 600;
     border: 2px solid var(--cor-terciaria);
     transition: 0.5s;
-
 }
 
 .apresentacao__links__link:hover {
@@ -113,13 +111,18 @@ body {
 }
 
 .apresentacao__imagem {
-     /*Em relação a tag pai main*/
+    width: 30%;  /*Em relação a tag pai main*/
+    margin: 0 15% 5% 0;
+    border: 5px solid var(--cor-terciaria); /*borda em volta da foto*/
+    border-radius: 300px; /*arredondar a foto*/
+    justify-content: space-between;
 }
 
 .rodape {
     background-color: var(--cor-terciaria);
     color: var(--cor-primaria);
-    padding: 35px;
+    padding: 30px;
+    margin-top: 5%; /*utilizei esse margin para o footer descer pois estava com um espaço em baixo*/
     text-align: center;
     font-family: 'krona-one', sans-serif;
     font-weight: 400;
@@ -147,7 +150,7 @@ body {
 
     .apresentacao__conteudo__titulo {
         font-size: 1.25rem;
-        padding: 10px 0;
+        padding: 20px 0 0;
     }
 
     .apresentacao__conteudo__paragrafo {
@@ -160,10 +163,11 @@ body {
 
     .apresentacao__imagem {
        width: 40%;
+       margin: 0 0 0 1px;
     }
 
     .rodape {
-        padding: 28px;
+        padding: 25px; /*espaçamento do footer*/
         margin-top: 15px ;
     }
     
