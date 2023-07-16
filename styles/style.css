@@ -41,6 +41,13 @@ body {
     font-size: 1.37rem; /* unidade de medida absoluta pela relativa */
     font-weight: bold;
     color: var(--cor-terciaria);
+    transition: 0.3s;
+}
+
+.cabecalho__menu__link:hover {
+    transition: 0.3s;
+    font-weight: 300;
+    
 }
 
 .apresentacao {
@@ -117,6 +124,13 @@ body {
     border: 2px solid var(--cor-terciaria); /*borda em volta da foto*/
     border-radius: 300px; /*arredondar a foto*/
     justify-content: space-between;
+    transition: 1s;
+   
+}
+
+.apresentacao__imagem:hover {
+    transform: rotateY(180deg); /*imagem girar no eixo y*/
+    transition: 0.5s;
 }
 
 .rodape {
